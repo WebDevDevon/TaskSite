@@ -164,13 +164,11 @@ button{
     transition-duration: 0.4s;
 }
 
-
 .list__task--del{
     color: #666666;
     margin-left: auto;
     margin-right: 10px;
 }
-
 
 .fa-check-circle:hover{
     color: #00881d;
