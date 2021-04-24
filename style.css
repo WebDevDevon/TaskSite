@@ -132,7 +132,6 @@ button{
     height: 300px;
 }
 
-/*overflow scroll without scrollbar*/
 .todolist__result::-webkit-scrollbar { width: 0 !important }
 
 .list__task{
@@ -186,7 +185,6 @@ button{
     cursor: pointer;
 }
 
-/*ClassList Toggle : checked*/
 .list__task--checked{
     color: #14a900;
 }
