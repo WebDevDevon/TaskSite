@@ -44,8 +44,6 @@ button{
     background: none;
 }
 
-/*Content*/
-/*--head*/
 .todolist{
     display: flex;
     justify-content: center;
@@ -129,9 +127,6 @@ button{
     transform: rotateX(180deg);
 }
 
-
-/*--result*/
-/*fix size of task list*/
 .todolist__result{
     overflow-y: scroll;
     height: 300px;
