@@ -139,8 +139,6 @@ var TodolistController = function(){
     }
 }();
 
-// ---------- Controll ----------
-// Concept : Parse Value, Check Event
 var MainController = function(TodoCtrl,UICtrl){
     
     var setupEventListener = function(){
@@ -175,7 +173,6 @@ var MainController = function(TodoCtrl,UICtrl){
     }
 
     //----------------------------------------------------
-    //check ID from Event Delegation
     var ctrlEventCheck = function(event){
         var itemID, itemClass, IdSplit, ID;
 
