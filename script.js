@@ -126,13 +126,10 @@ var TodolistController = function(){
 
         deleteTask: function(id){
             var ids, index;
-            // Note : if you delete one of array, the index ref id will change
-            // you have to solve this problem
             ids = data.map(function(current){
                 return current.id;
             });
 
-            //Part Delete
             index = ids.indexOf(parseInt(id));
             if(index !== -1){
                 data.splice(index, 1);
