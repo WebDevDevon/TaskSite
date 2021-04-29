@@ -1,12 +1,3 @@
-/* Tools for Build this project  
- - 1) MODULE DESIGN PATTERN (Ref. MVC)
- - 2) ES5 Javacript (Old Ver.)
- - 3) Event Delegation , Event Bubbling 
- - 4) Function Constructor, New Instance
-*/
-
-// ----------View Module ----------
-// Concept : Input Value from UI, Update UI
 var UIController = function(){
 
     var DOMString = {
@@ -100,8 +91,6 @@ var UIController = function(){
 }();
 
 
-// ---------- Model Module ----------
-// Concept: Create Formula, Calculate, Return Result
 var TodolistController = function(){
     //Array Storage
     var data = [];
