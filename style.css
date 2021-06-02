@@ -42,7 +42,7 @@ li{
 button{
     padding: 0;
     border: none;
-    background: none
+    background: none;
 }
 
 /*Content*/
@@ -116,14 +116,14 @@ button{
     cursor: pointer;
 }
 
-.ion-plus-circled{
+.fa-plus{
     font-size: 60px;
     color: #004d9e;
     transition-duration: 0.4s;
     display: inline-block;
 }
 
-.ion-plus-circled:hover{
+.fa-plus:hover{
     color: #69a5ff;
     transition-duration: 0.4s;
     transition: 0.9s;
@@ -179,14 +179,14 @@ button{
 }
 
 
-.ion-ios-checkmark:hover{
+.fa-check-circle:hover{
     color: #00881d;
     transition-duration: 0.4s;
     cursor: pointer;
 }
 
 
-.ion-android-delete:hover{
+.fa-trash:hover{
     color: #f70404;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -203,4 +203,8 @@ button{
     color: #aaaaaa;
     text-decoration: line-through;
     transition-duration: 0.4s;
+}
+
+#plus {
+    font-size: 60px;
 }

@@ -46,7 +46,7 @@ var UIController = function(){
             //Create HTML string with placeholder text
                 element = DOMString.taskListContainer;
                 
-                html = '<li class="list__task" id="task-%id%"><button class="list__task--check" id="check"><i class="ion-ios-checkmark"></i></button><div class="list__task--text">%description%</div><button class="list__task--del" id="del"><i class="ion-android-delete"></i></button></li>';
+                html = '<li class="list__task" id="task-%id%"><button class="list__task--check" id="check"><i class="fa fa-check-circle"></i></button><div class="list__task--text">%description%</div><button class="list__task--del" id="del"><i class="fa fa-trash"></i></button></li>';
                 
             //replace the placeholder with some actual data
                 markup = html.replace('%id%', tasks.id);
