@@ -1,0 +1,206 @@
+/*Global*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type="text"]{
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px #dddddd;
+    transition-duration: 0.4s;
+}
+
+input[type="text"]:focus{
+    border-bottom: solid 1px #3881ef;
+    transition-duration: 0.4s;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(270deg, #00f7b7, #ba7cf7, #ff9696);
+    background-size: 400% 400%;
+    height: 100vh;
+    width: 100%;
+    animation: AnimationName 9s ease infinite;
+}
+  
+@keyframes AnimationName {
+    0%{background-position:0% 40%}
+    50%{background-position:100% 61%}
+    100%{background-position:0% 40%}
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    padding: 0;
+    border: none;
+    background: none
+}
+
+/*Content*/
+/*--head*/
+.todolist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todolist__main{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
+    padding: 25px 0px;
+    border-radius: 20px;
+    width: 600px;
+    height: 800px;
+}
+
+@media  only screen and (max-height: 800px) {
+	.todolist__main{
+        height: auto;
+	}
+}
+
+.todolist__header{
+    padding: 0px 20px;
+}
+
+.todolist__header--date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.todolist__header--date span:nth-child(1){
+    font-size: 72px;
+    color: #3c3c3c;
+    font-weight: 600;
+}
+
+.warpper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.warpper span:nth-child(1){
+    font-size: 20px;
+    color: #3c3c3c;
+    font-weight: 500;
+}
+
+.warpper span:nth-child(2){
+    font-size: 20px;
+    color: #3c3c3c;
+    font-weight: 300;
+}
+
+.add__input{
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.add__circle{
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.ion-plus-circled{
+    font-size: 60px;
+    color: #004d9e;
+    transition-duration: 0.4s;
+    display: inline-block;
+}
+
+.ion-plus-circled:hover{
+    color: #69a5ff;
+    transition-duration: 0.4s;
+    transition: 0.9s;
+    transform: rotateX(180deg);
+}
+
+
+/*--result*/
+/*fix size of task list*/
+.todolist__result{
+    overflow-y: scroll;
+    height: 300px;
+}
+
+/*overflow scroll without scrollbar*/
+.todolist__result::-webkit-scrollbar { width: 0 !important }
+
+.list__task{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.list__task:hover{
+    border-left: solid 5px #38ef93;
+    background-color: #eeeeee;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.list__task i{
+    font-size: 20px;
+}
+
+.list__task--check{
+    color: #ffcc00;
+    transition-duration: 0.4s;
+}
+
+.list__task--text{
+    margin: 10px;
+    transition-duration: 0.4s;
+}
+
+
+.list__task--del{
+    color: #666666;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+
+.ion-ios-checkmark:hover{
+    color: #00881d;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.ion-android-delete:hover{
+    color: #f70404;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/*ClassList Toggle : checked*/
+.list__task--checked{
+    color: #14a900;
+}
+
+.list__task--text--checked{
+    margin-left: 10px;
+    margin: 10px;
+    color: #aaaaaa;
+    text-decoration: line-through;
+    transition-duration: 0.4s;
+}
