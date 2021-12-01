@@ -1,5 +1,7 @@
 # TO-DO Site-2021
 
+![Alt text](preview.gif)
+
 HTML5, CSS3, Javascript - Portfolio Site including links to my projects and ways to get in contact with me.
 
 **Link to site:** https://dailytasksandtodos.netlify.app/
